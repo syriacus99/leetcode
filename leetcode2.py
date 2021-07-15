@@ -3,6 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+from typing import List
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         carry = 0
@@ -18,3 +19,4 @@ class Solution:
             l2 = (l2.next if l2 else None)
         return dummy_l3.next
 
+#类型检查typing
